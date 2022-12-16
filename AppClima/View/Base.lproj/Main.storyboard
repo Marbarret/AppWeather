@@ -341,7 +341,7 @@
         <image name="speed" width="24" height="24"/>
         <image name="sun" width="394" height="380"/>
         <namedColor name="bg">
-            <color red="0.34155059030654517" green="0.567281569317868" blue="0.62065867940486052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.3411764705882353" green="0.56470588235294117" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

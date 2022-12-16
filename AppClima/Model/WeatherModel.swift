@@ -15,7 +15,6 @@ struct WeatherModel {
     let mintemp: Double
     let speed: Double
     let humidity: Int
-    let timezone: Int
         
     var tempString: String {
         return String(format: "%.0f", temp)

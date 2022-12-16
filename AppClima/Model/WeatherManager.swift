@@ -64,9 +64,8 @@ struct WeatherManager {
             let minTemp = decodedData.main.temp_min
             let speed = decodedData.wind.speed
             let humidity = decodedData.main.humidity
-            let timezone = decodedData.timezone
             
-            let weather = WeatherModel(conditionID: id, temp: temp, name: name, maxtemp: maxTemp, mintemp: minTemp, speed: speed, humidity: humidity, timezone: timezone)
+            let weather = WeatherModel(conditionID: id, temp: temp, name: name, maxtemp: maxTemp, mintemp: minTemp, speed: speed, humidity: humidity)
             return weather
         } catch {
             delegate?.didFailWithError(error)

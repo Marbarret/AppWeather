@@ -45,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6ACED5D294CC14B00C41BB0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2F324294A2001009E4239 /* Assets.xcassets */,
+				B6C2F326294A2001009E4239 /* LaunchScreen.storyboard */,
+				B6C2F329294A2001009E4239 /* Info.plist */,
+				B68ED5B5294A7C0900ADCEF7 /* ModifierView.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
 		B6C2F30F294A1FFD009E4239 = {
 			isa = PBXGroup;
 			children = (
@@ -67,12 +78,9 @@
 				B6C2F332294A2EE9009E4239 /* Model */,
 				B6C2F331294A2EE3009E4239 /* View */,
 				B6C2F330294A2EDA009E4239 /* Controllers */,
+				B6ACED5D294CC14B00C41BB0 /* Resourses */,
 				B6C2F31B294A1FFE009E4239 /* AppDelegate.swift */,
 				B6C2F31D294A1FFE009E4239 /* SceneDelegate.swift */,
-				B6C2F324294A2001009E4239 /* Assets.xcassets */,
-				B6C2F326294A2001009E4239 /* LaunchScreen.storyboard */,
-				B6C2F329294A2001009E4239 /* Info.plist */,
-				B68ED5B5294A7C0900ADCEF7 /* ModifierView.swift */,
 			);
 			path = AppClima;
 			sourceTree = "<group>";

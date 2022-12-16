@@ -10,18 +10,15 @@ import CoreLocation
 
 class ViewController: UIViewController {
 
-    // MARK: - Outlet/Label's
+    // MARK: - Outlet
     @IBOutlet weak var cityInformations: UILabel!
-    
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var cityName: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var mxmTemp: UILabel!
     @IBOutlet weak var minTemp: UILabel!
-    
     @IBOutlet weak var imgView: UIImageView!
-    
     @IBOutlet weak var searchCity: UITextField!
     
     var weatherManager = WeatherManager()
@@ -36,7 +33,6 @@ class ViewController: UIViewController {
         
         weatherManager.delegate = self
         searchCity.delegate = self
-        
     }
     
     @IBAction func locationPress(_ sender: UIButton) {
@@ -79,7 +75,6 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
-
 // MARK: - WeatherManagerDelegate
 extension ViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, _ weather: WeatherModel) {
@@ -91,7 +86,6 @@ extension ViewController: WeatherManagerDelegate {
             self.minTemp.text = "\(weather.mintempString)°C"
             self.speedLabel.text = "\(weather.speedString)m/s"
             self.humidityLabel.text = "\(weather.humidity)%"
-            
             
             self.cityInformations.text = "Today \(Date().dateFormatter(style: .medium)!)"
         }
